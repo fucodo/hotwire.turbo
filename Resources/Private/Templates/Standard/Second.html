@@ -1,0 +1,21 @@
+<html
+    xmlns:turbo="http://typo3.org/ns/fucodo/hotwire/turbo/ViewHelpers"
+    data-namespace-typo3-fluid="true"
+>
+<turbo-frame id="turbo_frame">
+    <h1>A freshly created Fluid template! {counter}</h1>
+    <p>Some data set by the controller:</p>
+    <ul>
+
+        <f:for each="{foos}" as="foo">
+            <li>{foo}</li>
+        </f:for>
+
+    </ul>
+
+    <f:link.action action="third" absolute="0">Third</f:link.action>
+    |
+    <f:link.action action="fourth" absolute="0">Fourth</f:link.action>
+</turbo-frame>
+
+</html>

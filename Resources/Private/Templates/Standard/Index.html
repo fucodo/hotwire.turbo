@@ -1,0 +1,43 @@
+<html
+    xmlns:turbo="http://typo3.org/ns/fucodo/hotwire/turbo/ViewHelpers"
+    data-namespace-typo3-fluid="true"
+>
+
+<f:layout name="Default" />
+
+<f:section name="Title">Index view of Standard controller</f:section>
+
+<f:section name="Head">
+    <script src="{f:uri.resource(package: 'fucodo.hotwire.turbo', path: 'JavaScript/bundle.js')}"></script>
+    <link rel="stylesheet" href="{f:uri.resource(package: 'fucodo.hotwire.turbo', path: 'Css/main.css')}" />
+</f:section>
+
+<f:section name="Content">
+    <h1>A freshly created Fluid template!</h1>
+    <p>Some data set by the controller:</p>
+    <ul>
+
+        <f:for each="{foos}" as="foo">
+            <li>{foo}</li>
+        </f:for>
+
+    </ul>
+
+    <turbo-frame id="turbo_frame1">
+        {counter}
+    </turbo-frame>
+
+    <turbo-frame id="turbo_frame" src="{f:uri.action(action: 'second', format: 'html')}">
+        loading
+    </turbo-frame>
+
+    <turbo-frame id="turbo_frame" src="{f:uri.action(action: 'second', format: 'html')}">
+        loading
+    </turbo-frame>
+
+    <turbo-frame id="turbo_frame" src="{f:uri.action(action: 'second', format: 'html')}">
+        loading
+    </turbo-frame>
+
+</f:section>
+</html>

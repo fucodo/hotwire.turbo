@@ -1,0 +1,23 @@
+{
+    "description": "",
+    "type": "neos-package",
+    "name": "fucodo/hotwire-turbo",
+    "require": {
+        "neos/flow": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "fucodo\\hotwire\\turbo\\": "Classes/"
+        }
+    },
+    "extra": {
+        "neos": {
+            "package-key": "fucodo.hotwire.turbo"
+        }
+    },
+    "scripts": {
+        "build": [
+            "npm run build"
+        ]
+    }
+}
